@@ -1,0 +1,11 @@
+ultralytics
+roboflow
+supervision
+scikit-learn
+opencv-python
+seaborn
+pandas
+matplotlib
+numpy
+opencv-python-headless
+streamlit
