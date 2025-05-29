@@ -1,5 +1,2 @@
-# *.pt
-# *.mp4
-*.avi
-*.png
 __pycache__/
+.venv/
