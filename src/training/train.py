@@ -27,8 +27,3 @@ def train_model(data_path):
         project=Config.OUTPUT_MODEL_DIR,
     )
     return results
-
-
-if __name__ == "__main__":
-    dataset_path = download_dataset()
-    train_model(dataset_path)
