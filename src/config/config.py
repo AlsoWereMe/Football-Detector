@@ -14,8 +14,8 @@ class Config:
     OUTPUT_PREDICT_DIR = "data/output/predictions"
     OUTPUT_HEATMAPS_DIR = "data/output/heatmaps"
 
-    # TODO: 根据实际路径修改
-    MODEL_PATH = "models/best_yolov5_50.pt"
+    # 路径
+    MODEL_PATH = "models/best_yolo.pt"
     
     # Roboflow配置
     ROBOFLOW_API_KEY = "Dzyc1PNrMrH36GR1E0w1"
