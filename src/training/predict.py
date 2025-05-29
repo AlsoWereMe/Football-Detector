@@ -7,7 +7,7 @@ from ultralytics import YOLO
 
 def predict():
     # 初始化配置
-    input_video = os.path.join(Config.INPUT_VIDEO_DIR, "08fd33_0.mp4")
+    input_video = os.path.join(Config.INPUT_VIDEO_DIR, "example1.mp4")
     output_dir = Config.OUTPUT_PREDICT_DIR
     model_path = Config.MODEL_PATH
 
