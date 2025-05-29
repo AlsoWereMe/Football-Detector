@@ -69,5 +69,3 @@ def predict():
         print("未检测到任何结果")
 
 
-if __name__ == "__main__":
-    predict()

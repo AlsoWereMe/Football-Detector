@@ -152,7 +152,3 @@ def main():
 
             st.write("### Teams Heatmap")
             st.image(heatmap_paths[3])
-
-
-if __name__ == "__main__":
-    main()

@@ -90,8 +90,3 @@ def main(video_name):
 
     # 成功保存视频
     print("Video saved successfully")
-
-
-if __name__ == "__main__":
-    video_name = "example1.mp4"
-    main(video_name)
