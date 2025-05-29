@@ -1,11 +1,18 @@
+# 核心视觉与模型处理
 ultralytics
 roboflow
 supervision
-scikit-learn
 opencv-python
-seaborn
-pandas
-matplotlib
-numpy
 opencv-python-headless
+
+# 数据分析与机器学习
+scikit-learn
+pandas
+numpy
+
+# 可视化与结果展示
+matplotlib
+seaborn
+
+# 应用部署
 streamlit
