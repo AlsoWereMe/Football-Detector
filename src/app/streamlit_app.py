@@ -110,9 +110,9 @@ def main():
     )
 
     example_videos = {
-        "Example 1": os.path.join(Config.INPUT_VIDEO_DIR, "/example1.mp4"),
-        "Example 2": os.path.join(Config.INPUT_VIDEO_DIR, "/example2.mp4"),
-        "Example 3": os.path.join(Config.INPUT_VIDEO_DIR, "/example3.mp4"),
+        "Example 1": os.path.join(Config.INPUT_VIDEO_DIR, "example1.mp4"),
+        "Example 2": os.path.join(Config.INPUT_VIDEO_DIR, "example2.mp4"),
+        "Example 3": os.path.join(Config.INPUT_VIDEO_DIR, "example3.mp4"),
     }
 
     video_path = ""
