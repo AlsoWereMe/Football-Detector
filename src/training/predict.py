@@ -1,8 +1,8 @@
-from ultralytics import YOLO
 import os
-from config import Config
 import time
 import json
+from ..config import Config
+from ultralytics import YOLO
 
 
 def predict():
@@ -21,8 +21,8 @@ def predict():
     results = model.predict(
         source=input_video,
         save=True,
-        save_txt=True,  # 保存检测结果的文本文件
-        save_crop=True,  # 保存裁剪的检测对象
+        save_txt=True,
+        save_crop=True,
         project=output_dir,
         name="predictions",
         show_labels=True,
@@ -36,7 +36,9 @@ def predict():
         result_stats = {
             "video": input_video,
             "frame_count": len(results),
-            "detection_count": sum(len(result.boxes) for result in results if result.boxes),
+            "detection_count": sum(
+                len(result.boxes) for result in results if result.boxes
+            ),
             "class_distribution": {},
         }
 

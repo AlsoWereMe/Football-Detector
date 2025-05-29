@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-os.path.join("../")  # 将上级目录添加到系统路径中
+
 from src.utils import get_bbox_width, get_center_of_bbox, measure_distance, get_foot_position
 
 class Tracker:

@@ -1,13 +1,12 @@
-import streamlit as st
 import os
-from config import Config
-from src.utils import save_video, read_video
-from src.trackers import Tracker
-from src.analysis import TeamAssigner, PlayerBallAssigner
-from src.visualization import HeatmapVisualizer
+import streamlit as st
 import numpy as np
-import subprocess
-import sys
+from ..config.config import Config
+from ..utils import save_video, read_video
+from ..trackers import Tracker
+from ..analysis import TeamAssigner, PlayerBallAssigner
+from ..visualization import HeatmapVisualizer
+
 
 
 def process_video(video_path):

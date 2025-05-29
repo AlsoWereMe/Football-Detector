@@ -1,7 +1,7 @@
 import os
 from roboflow import Roboflow
 from ultralytics import YOLO
-from config import Config
+from ..config import Config
 
 
 def download_dataset():

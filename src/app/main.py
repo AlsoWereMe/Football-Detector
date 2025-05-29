@@ -1,11 +1,10 @@
-import cv2
 import os
-from config import Config
 import numpy as np
-from src.utils import save_video, read_video
-from src.trackers import Tracker
-from src.analysis import TeamAssigner, PlayerBallAssigner
-from src.visualization import HeatmapVisualizer
+from ..config import Config
+from ..utils import save_video, read_video
+from ..trackers import Tracker
+from ..analysis import TeamAssigner, PlayerBallAssigner
+from ..visualization import HeatmapVisualizer
 
 
 def main(video_name):
