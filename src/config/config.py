@@ -1,5 +1,6 @@
 class Config:
     # YOLOv5训练配置
+    DATASET_PATH = "data/football-players-detection-9"
     BASE_MODEL = "yolov5x.pt"
     EPOCHS = 100
     IMG_SIZE = 640

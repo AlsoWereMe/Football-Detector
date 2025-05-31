@@ -15,7 +15,7 @@
 ## 如何运行本项目
 - 输入`pip install -r requirements.txt`安装所有依赖
 - 在项目根目录下，启动终端运行命令`python train.py`进行训练
-- 训练好的模型文件`XXXX.pt`将存放在`models/`下，将其改名为`best_yolo.py`
+- 训练过程中，项目根目录下将出现`yolov5xu.pt`文件，训练好后，它将存放在`models/`下，请将其改名为`best_yolo.py`
 - 在项目根目录下，启动终端运行命令`streamlit run run.py`，即可进入前端界面，界面中会展示测试用的视频，点击`process`按钮即可进行测试。
 ![frontend_fig](./images/streamlit_frontend.png)
 
