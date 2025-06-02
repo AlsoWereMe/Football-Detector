@@ -11,10 +11,11 @@ from ..visualization import HeatmapVisualizer
 
 def process_video(video_path):
 
+    # 读取视频，处理基本的视频信息如切帧、取名等
     video_name = os.path.basename(video_path)
     if video_name.endswith(".mp4"):
         video_name = video_name[:-4]
-    video_frames = read_video(video_path)  # 读取视频
+    video_frames = read_video(video_path)  
 
     # 初始化追踪器，获取球员和球的跟踪数据
     stub_name = f"track_stubs_{video_name}.pkl"
