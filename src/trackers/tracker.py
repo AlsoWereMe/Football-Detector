@@ -19,7 +19,7 @@ class Tracker:
         self.tracker = sv.ByteTrack()   # 初始化目标跟踪器
         self.previous_distances = []  # 新增变量，存储上一帧的距离信息
 
-    def add_position_to_tracks(sekf,tracks):
+    def add_position_to_tracks(self,tracks):
         """将目标的位置添加到跟踪结果中"""
         for object, object_tracks in tracks.items():
             for frame_num, track in enumerate(object_tracks):
