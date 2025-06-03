@@ -8,14 +8,13 @@ from ..analysis import TeamAssigner, PlayerBallAssigner
 from ..visualization import HeatmapVisualizer
 
 
-
 def process_video(video_path):
 
     # 读取视频，处理基本的视频信息如切帧、取名等
     video_name = os.path.basename(video_path)
     if video_name.endswith(".mp4"):
         video_name = video_name[:-4]
-    video_frames = read_video(video_path)  
+    video_frames = read_video(video_path)
 
     # 初始化追踪器，获取球员和球的跟踪数据
     stub_name = f"track_stubs_{video_name}.pkl"
@@ -107,14 +106,10 @@ def process_video(video_path):
 def main():
     st.title("Football Detector")
     st.write(
-        "Upload a football match video to detect players, referees, and the ball, and generate heatmaps."
+        "To detect players, referees, and the ball, and generate heatmaps in a football match video."
     )
 
-    example_videos = {
-        "Example 1": os.path.join(Config.INPUT_VIDEO_DIR, "example1.mp4"),
-        "Example 2": os.path.join(Config.INPUT_VIDEO_DIR, "example2.mp4"),
-        "Example 3": os.path.join(Config.INPUT_VIDEO_DIR, "example3.mp4"),
-    }
+    example_videos = {"Example 1": os.path.join(Config.INPUT_VIDEO_DIR, "example1.mp4")}
 
     video_path = ""
     example_choice = st.selectbox(
@@ -124,17 +119,8 @@ def main():
         video_path = example_videos[example_choice]
         st.video(video_path)
 
-    uploaded_file = st.file_uploader(
-        "Or Upload Your Own Video", type=["mp4", "avi", "mov"]
-    )
-
     if st.button("Process Video"):
-        if uploaded_file is not None:
-            video_path = uploaded_file.name
-            with open(video_path, "wb") as f:
-                f.write(uploaded_file.getbuffer())
-        elif example_choice:
-            video_path = example_videos[example_choice]
+        video_path = example_videos[example_choice]
 
         if video_path:
             output_video_path, heatmap_paths = process_video(video_path)
