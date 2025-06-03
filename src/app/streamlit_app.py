@@ -109,7 +109,7 @@ def main():
         "To detect players, referees, and the ball, and generate heatmaps in a football match video."
     )
 
-    example_videos = {"Example 1": os.path.join(Config.INPUT_VIDEO_DIR, "example1.mp4")}
+    example_videos = {"Example": os.path.join(Config.INPUT_VIDEO_DIR, "example1.mp4")}
 
     video_path = ""
     example_choice = st.selectbox(
